@@ -5,9 +5,7 @@ function Nav() {
   return (
     <StyledNav>
       <header>
-        <div>
-          <h1>Pad's Healing Hand Salve</h1>
-        </div>
+        <h1>Pad's Healing Hand Salve</h1>
         <nav>
           <ul>
             <ul>placeholder1</ul>
@@ -22,10 +20,13 @@ function Nav() {
 
 export const StyledNav = styled.div`
   height: 125vh;
+  position: relative;
   background-size: cover;
   font-family: sans-serif;
   margin-top: 80px;
   padding: 30px;
+  font-family: "Times New Roman", Times, serif;
+  color: blue;
 
   header {
     background-color: gray;
@@ -34,14 +35,16 @@ export const StyledNav = styled.div`
     left: 5px;
     right: 5px;
     height: 80px;
-    display: flex;
+    display: grid;
     align-items: center;
-    h1 {
-      position: center;
-    }
-    nav {
-      color: green;
-    }
+    justify-content: center;
+  }
+
+  nav {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
   }
   header * {
     display: inline;
